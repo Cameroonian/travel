@@ -13,3 +13,6 @@
 <% if @size.to_i >12%>
 <p> HUUUUUUUUGE </p>
 <%end%>
+
+<%= link_to "Blue",{controller: 'welcome', action:'about', color:"Blue"},class: 'btn btn-primary'%>
+<%= link_to "Red",{controller: 'welcome', action:'about', color:"Red"},class: 'btn btn-primary'%>
