@@ -1,0 +1,16 @@
+<h1>Welcome to my travel site</h1>
+<p>This is where the travel stuff happens!</p>
+
+<p> My name is Cameron and my family is from <%= @homeland %> </p>
+<ul>
+	<%@countries.each do |country|%>
+	<li><%= country%></li>
+<%end%>
+</ul>
+<%@image.each do |image|%>
+<%=image_tag image%>
+<%end%>
+<%= image_tag "ireland.jpg", width:"200"%>
+<%= image_tag "rainbow.jpg", width:"200"%>
+<%= image_tag "table.jpg", width:"200"%>
+<%= image_tag "bridge.jpg", width:"200"%>
